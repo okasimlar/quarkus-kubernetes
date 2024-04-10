@@ -1,0 +1,23 @@
+---
+openapi: 3.0.3
+info:
+  title: vlbgwebdav-service API
+  version: 1.0.0-SNAPSHOT
+paths:
+  /get-number-of-seats:
+    get:
+      tags:
+      - Availability Service
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+components:
+  securitySchemes:
+    SecurityScheme:
+      type: http
+      description: Authentication
+      scheme: basic
